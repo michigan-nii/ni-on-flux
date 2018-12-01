@@ -25,3 +25,7 @@ is a list of some examples.
   &ldquo;<a href="http://www.umich.edu/~nii/events/ProbabilisticTractographyOverview_NII.pptx">Where
   is your white matter going (and how sure can you be)?</a>&rdquo;)
 
+The purpose of this site, and of the workshop it is intended to
+accompany, is to give you the minimum information you need to be
+able to use the Flux cluster for your own work.  Please use the menu
+items to the left to work your way through the material.

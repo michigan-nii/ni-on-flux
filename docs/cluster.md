@@ -5,44 +5,47 @@
 
 ## Cluster components
 
-The cartoon is dead-on.  The cloud is basically a bunch of Linux servers.
+Clusters and clouds are very similar. The cloud is mostly Linux,
+whereas the Flux cluster is all Linux servers. The cluster has
+nodes (servers) that perform different functions.  These are the
+most important ones.
 
-The cluster is made up of nodes that perform various functions; the
-following diagram shows a generic cluster configuration.
+The following diagram shows a generic cluster configuration.
 
 ![Generic cluster configuration](./images/hpc_system_diagram.png)
-
-As you can see, the point of contact is a login node of some type.  Flux
-has two types, one for interactive commands and one only for data
-transfer commands.
-
-Login nodes almost always have policies.  Ours is they are to edit
-files, compile source code, and run test programs on small data
-sets for short periods of time to uncover syntax errors and the like.
-
-The login nodes are not to be used for large parallel programs,
-large datasets, or for a long time. We have compute nodes for that.
-We will show you how to get a compute node(s) if you must have one
-to test things in something called an interactive batch job.
-(Oxymoron alert!)
 
 ## Nodes
 
 We call specific physical machines _nodes_, and there are three types of
 which you should be aware:  login, data transfer, and compute.
 
-Nodes typically look something like this,
+Nodes would typically look something like this on the inside, if they
 
 ![Generic node structure](./images/node_diagram.png)
 
-only most of our nodes have at least eight cores per CPU and most nodes
-have two CPU sockets.
+had only one physical CPU processor. Most Flux nodes have two of those.
+
+As you can see from the diagram of the cluster, your point of contact is a
+_login node_ of some type.  Flux has two types, one for interactive commands
+and one only for data transfer commands.
+
+Login nodes have policies regarding their use. On Flux the policy says these
+are the intended uses:  edit files, compile source code, and run test
+programs on small data sets for short periods of time to uncover syntax
+errors and the like. A login node is not where you should run something
+like `recon-all`, which can take a day, but it is OK to run something
+small, like `bet`, which will finish in a minute or two.
+
+When you want to get some real work done, you use the data transfer node to
+copy data to Flux; then you use a login node to create a file containing the
+commands for the programs you wish to run with that data.  You then submit
+the file of commands to be processed _in batch_.  The cluster then runs your
+commands on a _compute node_.  When all the processing is done, you use the
+data transfer node to copy the results from the cluster.
 
 ## Disk storage
 
-There is storage space that is shared among the login (including data
-transfer) and compute nodes, so files you see from a login node are
-also visible from compute nodes.
+There is network storage space that is shared among the login (including data transfer) and compute nodes, so files you see from a login node are also visible from compute nodes.
 
 Typically each user will get a small amount of space for configuration
 files, dot files, maybe enough space to install some software, always
