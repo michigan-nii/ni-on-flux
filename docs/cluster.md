@@ -1,12 +1,7 @@
-[What are clouds made of?](./images/cloud.jpg)
 
 # What is a cluster anyway?
 
-Clusters and clouds are made of the same thing and are variations on an idea
-from the early days of computing (Multics 1964): Make computers available to
-people from their home or office.  That&rsquo;s neat trivia that the idea
-for what became the new hotness in the 21st century got started 40 years
-earlier.
+![What are clouds made of?](./images/cloud.jpg)
 
 ## Cluster components
 
