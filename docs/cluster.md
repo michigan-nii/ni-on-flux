@@ -1,4 +1,4 @@
-![Whats are clouds made of?](./images/cloud.jpg)
+[What are clouds made of?](./images/cloud.jpg)
 
 # What is a cluster anyway?
 
