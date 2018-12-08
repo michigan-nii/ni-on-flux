@@ -7,23 +7,15 @@
 
 Clusters and clouds are very similar. The cloud is mostly Linux,
 whereas the Flux cluster is all Linux servers. The cluster has
-nodes (servers) that perform different functions.  These are the
-most important ones.
+nodes (servers) that perform different functions.
 
 The following diagram shows a generic cluster configuration.
 
 ![Generic cluster configuration](./images/hpc_system_diagram.png)
 
-## Nodes
-
 We call specific physical machines _nodes_, and there are three types of
 which you should be aware:  login, data transfer, and compute.
 
-Nodes would typically look something like this on the inside, if they
-
-![Generic node structure](./images/node_diagram.png)
-
-had only one physical CPU processor. Most Flux nodes have two of those.
 
 As you can see from the diagram of the cluster, your point of contact is a
 _login node_ of some type.  Flux has two types, one for interactive commands
@@ -42,6 +34,15 @@ commands for the programs you wish to run with that data.  You then submit
 the file of commands to be processed _in batch_.  The cluster then runs your
 commands on a _compute node_.  When all the processing is done, you use the
 data transfer node to copy the results from the cluster.
+
+## CPUs and memory
+
+A node with one physical CPU would look something like this.
+
+![Generic node structure](./images/node_diagram.png)[Generic node structure](./images/node_diagram.png)
+
+had only one physical CPU processor. Most Flux nodes have two of those.
+
 
 ## Disk storage
 
