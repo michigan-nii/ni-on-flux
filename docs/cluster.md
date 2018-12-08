@@ -39,7 +39,7 @@ data transfer node to copy the results from the cluster.
 
 A node with one physical CPU would look something like this.
 
-![Generic node structure](./images/node_diagram.png)[Generic node structure](./images/node_diagram.png)
+![Generic node structure](./images/node_diagram.png)
 
 had only one physical CPU processor. Most Flux nodes have two of those.
 
