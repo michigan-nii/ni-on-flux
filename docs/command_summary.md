@@ -16,7 +16,7 @@
 These are subcommands to the `module` command.
 
 | Subcommand | Purpose | Example |
-|:---------|---------|---------|
+|---------|---------|---------|
 | `keyword` | search for term in all modules | `module keyword fmri` |
 | `spider` | more detail about a specific package | `module spider fsl` |
 | `available` | modules that are available to load | ` module available ANTs` |
