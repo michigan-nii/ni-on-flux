@@ -164,4 +164,10 @@ and if you decide that there was something wrong, you can delete it with
 $ qdel 32317825
 ```
 
+To see the status of all of your jobs, you should use
+
+```
+$ qstat -u $USER
+```
+
 However, let us move on how to find and use software on Flux.
