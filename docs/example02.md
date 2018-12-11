@@ -16,6 +16,12 @@ will use here.
 
 Change to the `~/ni-for-flux/example02` folder.
 
+I made a small subset of an OpenfMRI.org data set under the
+`ds000114_R2.0.1` folder.  The data is stored in BIDS format,
+so each subject has a folder `sub-01`, etc., under which you
+will find a condition, `ses-test` or `ses-retest`, and under
+each of those, a `func` folder.
+
 For this example, you will want to have a list of the files for the
 covert verb generation task.  They are named,
 
