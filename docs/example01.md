@@ -1,7 +1,7 @@
 # Simple example
 
 We will start with a simple example.  You decide you want to use MRtrix,
-and one of the first things you will need to do is to correct or field
+and one of the first things you will need to do is to correct for field
 bias.
 
 Consulting the wizards down the hall, you find out that you need to run
@@ -12,7 +12,7 @@ $ dwibiascorrect -ants dwi.mif dwi_biascorrected_fba.mif
 ```
 
 This is just an example to illustrate how to find things.  Change to
-the `ni-for-flux/example01` directory.  The `dwi.mif` file exists,
+the `~/ni-for-flux/example01` directory.  The `dwi.mif` file exists,
 so all we need to do is figure out how to run the software.
 
 The first thing you need to do is to locate the MRtrix software on
