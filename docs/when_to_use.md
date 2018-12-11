@@ -4,7 +4,7 @@ Many people wonder why they should bother with the cluster at all.  I mean,
 it's inconvenient, it takes more time to find and fix mistakes, and it's
 got all these bureaucratic details like accounts and so forth to deal with.
 
-Most people who use the cluster for one of three reasons.
+Most people use the cluster for one of three reasons.
 
 1. They have a lot of subjects to analyze, anywhere from a few hundred
    to many thousands.  They simply could not do the work with their
