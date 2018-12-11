@@ -6,7 +6,7 @@ to run a variety of neuroimaging analyses in the last several years. Here
 is a list of some examples.
 
 * The FreeSurfer `recon-all` command can take anywhere from about 8 hours
-  to more 24 hours per subject. One lab found an average of about 12 hours,
+  to more than 24 hours per subject. One lab found an average of about 12 hours,
   and they had approximately 200 subjects.  That would have been about
   50 days just to do preprocessing; using Flux and running 12 subjects at
   a time enabled them to finish processing in one week.
