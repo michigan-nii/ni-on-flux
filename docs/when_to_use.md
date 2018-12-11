@@ -1,6 +1,6 @@
 # When should you use the cluster?
 
-Many people wonder why they should both with the cluster at all.  I mean,
+Many people wonder why they should bother with the cluster at all.  I mean,
 it's inconvenient, it takes more time to find and fix mistakes, and it's
 got all these bureaucratic details like accounts and so forth to deal with.
 
@@ -18,4 +18,3 @@ Most people who use the cluster for one of three reasons.
 1. You need your own computers for something else.  If you set your
    computer to running analyses that will take a week, they may not
    be usable for other things that are equally important.
-
