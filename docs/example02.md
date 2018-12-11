@@ -147,6 +147,8 @@ echo Running:  fslinfo $current_file
 fslinfo $current_file
 ```
 
+## Running your job
+
 You can now `qsub` that file, which will generate a new job ID that looks like
 ```
 $ qsub array_test.pbs 
@@ -184,7 +186,16 @@ test_array.o32319640-2  test_array.o32319640-4
 Did you get an error in them? Something like,
 
 ```
--bash: fslinfo: command not found
+/var/spool/torque/mom_priv/jobs/32319805-1.nyx.arc-ts.umich.edu.SC:
+  line 95: fslinfo: command not found
+```
+
+The first part of that scary message is just the name of your
+script after PBS copied it to the compute node to run.  The part you
+should read is
+
+```
+  line 95: fslinfo: command not found
 ```
 
 Ah, ha!  Remember to check which modules you need to have loaded before
@@ -192,7 +203,8 @@ submitting your job; put that into a comment in your PBS file so you
 can use it from there.
 
 It is not a bad idea to clear your module list and use only the modules
-you will really need.
+you will really need.  Don't forget to put the module list into the comment
+in your PBS file.
 
 ```
 $ module purge
@@ -202,3 +214,8 @@ $ qsub array_test.pbs
 ```
 
 That should produce better results.
+
+What do you think?  Would it be a better reminder to put the comment
+about which modules to load at the _top_ of the PBS script rather than
+down where the software gets run?  Would that make you remember to
+check that better than its current location?
