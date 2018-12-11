@@ -136,3 +136,32 @@ The first lists the software you have available from inside your
 job, and the second will confirm you are working from where you
 think you should.
 
+## Testing your setup
+
+It is always a good idea to test your setup.  The template file
+that we just created will generate some output, so you should submit
+it now using
+
+```
+$ qsub template.pbs
+32317825.nyx.arc-ts.umich.edu
+```
+
+The output from `qsub` is the job ID, and the number at the beginning
+of it, 32317825, in the example above will be used with other
+`q`-commands/
+
+It will take up to 5 minutes for your job to start.  You can check on
+status with
+
+```
+$ qstat 32317825
+```
+
+and if you decide that there was something wrong, you can delete it with
+
+```
+$ qdel 32317825
+```
+
+However, let us move on how to find and use software on Flux.
