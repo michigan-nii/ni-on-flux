@@ -116,7 +116,11 @@ command that you just tested after the line that reads
 ####  Commands your job should run follow this line
 ```
 
-That's the least you need to do.  You can submit your job now.
+That's the least you need to do.  You can submit your job now.  Oh,
+wait!  Many programs, FSL and MRtrix among them, won't run if you
+have already run them, so you should remove the `dwi_biascorrected_fba.mif`
+file created by the running `dwibiascorrect` manually before you
+submit your job.
 
 It is generally good to change the job name, add a comment that lists
 the modules needed, and comment what your commands are doing.  To see
