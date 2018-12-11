@@ -14,7 +14,7 @@ This scenario requires a list of something. Often the list will be
 of subjects, but it may also be a list of files, which is what we
 will use here.
 
-Change to the `ni-for-flux/example02` folder.
+Change to the `~/ni-for-flux/example02` folder.
 
 For this example, you will want to have a list of the files for the
 covert verb generation task.  They are named,
