@@ -69,7 +69,7 @@ Line no     Line contents   First N     Last of the first N
 -----------------------------------------------------------
 [1]         sub001          sub001
 [2]         sub002          sub002 
-[3]         sub003          sub003           sub001
+[3]         sub003          sub003           sub003
 [4]         sub004
 [5]         sub005
 ```
@@ -93,7 +93,7 @@ We are outside a job, so we can test this by setting the value of
 
 ```
 $ PBS_ARRAYID=3
-head -${PBS_ARRAYID} covert_verb.lst | tail -1
+$ head -${PBS_ARRAYID} covert_verb.lst | tail -1
 sub001
 ```
 
@@ -108,7 +108,7 @@ and we can now use that with our analysis command, which for illustration
 just prints the header information.
 
 ```
-fslinfo $current_file
+$ fslinfo $current_file
 ```
 
 When you are done testing, make sure that you **unset** the `PBS_ARRAYID`
